@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.navbar-title {
+    font-weight: 900;
+}
+
+header li {
+    font-size: 13pt;
+    color: #444;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border: 0;
+    float:right;
+}
+
+.profile .image {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.profile .name {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.profile .name span {
+    font-size: medium;
+    font-weight: 500;
+    color: #666;
+}
+
+.profile .describe {
+    color: #444;
+    font-size: medium;
+    font-weight: 100;
+    text-align: center;
+    margin: 30px;
+    font-family: 'Noto Serif KR', serif;
+}
+
+footer {
+    margin: 20px;
+    width: 100%;
+    display: block;
+    justify-items: center;
+}
+
+footer .link {
+    font-weight: bold;
+    color: #ABCDEF;
+}
+
+footer a, footer div {
+    display: block;
+    text-align: center;
+}
