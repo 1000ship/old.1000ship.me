@@ -1,0 +1,16 @@
+footer {
+    margin: 20px;
+    width: 100%;
+    display: block;
+    justify-items: center;
+}
+
+footer .link {
+    font-weight: bold;
+    color: #ABCDEF;
+}
+
+footer a, footer div {
+    display: block;
+    text-align: center;
+}
