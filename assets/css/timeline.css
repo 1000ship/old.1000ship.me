@@ -28,7 +28,7 @@
     font-style: italic;
     background-color: rgba(255,255,255,0.9);
     border-radius: 5px;
-    padding: 2px 5px;
+    padding: 1px 5px;
     display: inline-block;
 }
 
@@ -95,11 +95,3 @@
 .timeline th:last-child, .timeline td:last-child {
     border-right: none;
 }
-
-/* .timeline tr {
-    transition: 0.3s;
-}
-
-.timeline tr:not(:first-child):hover {
-    transform: scale(1.01);
-} */
