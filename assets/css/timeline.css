@@ -1,10 +1,8 @@
 .timeline {
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .timeline table {
-    margin: auto auto;
+    margin: auto auto;;
 }
 
 .timeline th {
@@ -26,12 +24,16 @@
 
 .timeline td .language {
     margin-left: 5px;
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
     background-color: rgba(255,255,255,0.9);
     border-radius: 5px;
     padding: 2px 5px;
     display: inline-block;
+}
+
+.timeline td .badge {
+    font-weight: 300;
 }
 
 .timeline tr td:nth-child(5) {

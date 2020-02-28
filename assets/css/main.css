@@ -7,3 +7,7 @@ body {
 .navbar-title {
     font-weight: 900;
 }
+
+.divider {
+    height: 50px;
+}
