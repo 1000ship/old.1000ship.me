@@ -35,19 +35,11 @@
 }
 
 .timeline tr td:nth-child(5) {
-    background: linear-gradient(45deg,
-    rgba(0,0,0,0.1) 25%, white 0, white 50%,
-    rgba(0,0,0,0.1) 0, rgba(0,0,0,0.1) 75%, white 0);
-    -webkit-background-size: 33.3%;
-    background-size: 33.3%;
+    background: rgba(0,0,0,0.1);
 }
 
 .timeline tr td:nth-child(7), .timeline tr td:nth-child(8) {
-    background: linear-gradient(45deg,
-    rgba(0, 150, 0, 0.3) 25%, rgba(0,0,0,0.1) 0, rgba(0,0,0,0.1) 50%,
-    rgba(0, 150, 0, 0.3) 0, rgba(0, 150, 0, 0.3) 75%, rgba(0,0,0,0.1) 0);
-    -webkit-background-size: 33.3%;
-    background-size: 33.3%;
+    background: rgba(0, 150, 0, 0.3);
 }
 
 .timeline .actionscript td {
