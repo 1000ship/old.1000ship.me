@@ -1,5 +1,14 @@
+* { box-sizing: border-box; }
+
+.workspace:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .workspace .work {
     margin: 10px 0px;
+    float: left;
 }
 
 .workspace .work img {
