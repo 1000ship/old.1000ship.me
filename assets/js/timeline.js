@@ -13,7 +13,7 @@ $(function(){
         if( !is_timeline_mouse ) return;
         let scroll_left = $(".timeline-table-container").scrollLeft();
         let pageWidth = $(window).width();
-        let bias = Number(timeline_mouse_x-pageWidth/2) / 100;
+        let bias = Number(timeline_mouse_x-pageWidth/2) / 70;
         $(".timeline-table-container").scrollLeft( scroll_left + bias );
     }
 })
