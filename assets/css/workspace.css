@@ -7,7 +7,7 @@
 }
 
 .workspace .work {
-    margin: 10px 0px;
+    margin: 15px 15px;
     float: left;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .workspace .work img:hover {
-    transform: scale(1.015);
+    transform: scale(1.04);
     box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
 }
 
@@ -47,8 +47,8 @@
 }
 
 .workspace .work .keyword .tag {
-    border: 1px solid lightgray;
-    color: gray;
+    border: 1px solid rgb(154, 154, 154);
+    color: rgb(97, 97, 97);
     font-size: 12px;
     font-weight: 100;
     display: inline-block;
