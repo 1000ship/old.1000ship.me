@@ -10,7 +10,9 @@
 //     gutter: 20,
 //   });
 
+var works = []
 $(function(){
+    works = $(".work");
     $(window).trigger("resize")
 })
 
@@ -48,7 +50,6 @@ function rearrangeWorkspace ( size_state )
 
     let targets = [first_col, second_col, third_col];
     targets = targets.slice( 0, request_count );
-    var works = $(".work");
     for( i = 0; i < works.length; ++ i )
         targets[i%request_count].append( works[i] );
 }
