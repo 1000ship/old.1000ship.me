@@ -11,12 +11,12 @@
     float: left;
 }
 
-.workspace .work img {
+.workspace .work img, .workspace .work video {
     width: 100%;
     transition: 0.5s;
 }
 
-.workspace .work img:hover {
+.workspace .work img:hover, .workspace .work video:hover {
     transform: scale(1.04);
     box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
 }
