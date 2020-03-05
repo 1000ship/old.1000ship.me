@@ -13,6 +13,7 @@
 
 .workspace .work img, .workspace .work video {
     width: 100%;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
     transition: 0.5s;
 }
 
