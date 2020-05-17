@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from './Container'
+import Container from '../Container'
 import { Row, Col } from 'framework7-react'
 
 
