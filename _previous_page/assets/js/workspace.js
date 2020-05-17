@@ -22,7 +22,7 @@ $(window).resize(function(){
     const MD_SIZE = 768;
     const LG_SIZE = 992;
     const CURRENT_SIZE = $(window).width();
-    if( CURRENT_SIZE > LG_SIZE )
+    if( CURRENT_SIZE > LG )
         window_size_state = "lg";
     else if( CURRENT_SIZE > MD_SIZE )
         window_size_state = "md";

@@ -17,33 +17,38 @@ export default class extends React.Component {
     }
     
     resize() {
-        const SM_SIZE = 576;
         const MD_SIZE = 768;
-        let columns = 3;
-        if ( window.innerWidth < SM_SIZE )
+        const LG_SIZE = 992;
+        let columns = 0;
+        if ( window.innerWidth < MD_SIZE )
             columns = 1
-        else if ( window.innerWidth < MD_SIZE )
+        else if ( window.innerWidth < LG_SIZE )
             columns = 2
-        if( this.state.columns !== columns )
+        else
+            columns = 3
+        if( this.state.columns != columns )
+        {
             this.setState({columns});
+        }
     }
 
     render () {
         const {columns} = this.state
+        console.log( "render", columns, this.props.children )
         return (
             <Container> 
                 <Row className="workspace">
                     <Col width="50" className="work-sizer"></Col>
                     <Col width="100"><span className="partial-title">🎁 What I made</span></Col>
-                    <Col width="100" medium="50" large="33">
+                    <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : 33 }`}>
                         {React.Children.map( this.props.children, (work, index) =>
                             ((index % columns == 0) ? <React.Fragment>{work}</React.Fragment> : <></>))}
                     </Col>
-                    <Col width="100" medium="50" large="33">
+                    <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : 33 }`}>
                         {React.Children.map( this.props.children, (work, index) =>
                             ((index % columns == 1) ? <React.Fragment>{work}</React.Fragment> : <></>))}
                     </Col>
-                    <Col width="100" medium="50" large="33">
+                    <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : 33 }`}>
                         {React.Children.map( this.props.children, (work, index) =>
                             ((index % columns == 2) ? <React.Fragment>{work}</React.Fragment> : <></>))}
                     </Col>
