@@ -1,5 +1,6 @@
 .timeline table {
     margin: auto auto;
+    border-collapse: collapse;
 }
 
 .timeline th {
@@ -29,10 +30,13 @@
     display: inline-block;
 }
 
-.timeline td .badge {
+.timeline td .badge-text {
     font-size: 11px;
     font-weight: 300;
     text-align: left;
+    line-height: 1;
+    padding: .25em .4em;
+    display: inline-block;
 }
 
 .timeline tr td:nth-child(5) {

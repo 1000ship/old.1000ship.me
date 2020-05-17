@@ -3,7 +3,6 @@ import {createGlobalStyle} from "styled-components";
 import "../css/main.css";
 import "../css/profile.css";
 import "../css/header.css";
-import "../css/footer.css";
 import "../css/timeline.css";
 import "../css/workspace.css";
 
@@ -16,5 +15,15 @@ export default createGlobalStyle`
     body {
         font-family: 'Noto Sans KR', sans-serif;
         overflow-x: hidden;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .align-center {
+        text-align: center;
+    }
+
+    .d-block {
+        display: block;
     }
 `
