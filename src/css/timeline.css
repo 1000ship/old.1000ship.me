@@ -1,36 +1,37 @@
-.timeline table {
+.dev-timeline table {
     margin: auto auto;
     border-collapse: collapse;
+    padding: 0px;
 }
 
-.timeline th {
+.dev-timeline th {
     font-size: 18px;
     padding: 5px 33px;
 }
 
-.timeline th .sub {
+.dev-timeline th .sub {
     font-size: 12px;
     color: gray;
     text-align: center;
 }
 
-.timeline td {
+.dev-timeline td {
     padding-top: 10px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--bg-color-inverse);
     vertical-align: bottom;
 }
 
-.timeline td .language {
+.dev-timeline td .language {
     margin-left: 5px;
     font-weight: 700;
     font-style: italic;
-    background-color: rgba(255,255,255,0.9);
+    background-color: var(--bg-color-1);
     border-radius: 5px;
     padding: 1px 5px;
     display: inline-block;
 }
 
-.timeline td .badge-text {
+.dev-timeline td .badge-text {
     font-size: 11px;
     font-weight: 300;
     text-align: left;
@@ -38,68 +39,74 @@
     padding: .25em .4em;
     display: inline-block;
 }
-
-.timeline tr td:nth-child(5) {
-    background: rgba(0,0,0,0.1);
+.theme-dark .dev-timeline td .badge-text {
+    font-weight: 500;
 }
 
-.timeline tr td:nth-child(7), .timeline tr td:nth-child(8) {
+.dev-timeline tr td:nth-child(5) {
+    background: rgba(0,0,0,0.1);
+}
+.theme-dark .dev-timeline tr td:nth-child(5) {
+    background: rgba(255,255,255,0.1);
+}
+
+.dev-timeline tr td:nth-child(7), .dev-timeline tr td:nth-child(8) {
     background: rgba(0, 150, 0, 0.3);
 }
 
-.timeline .actionscript td {
+.dev-timeline .actionscript td {
     color: rgb(218, 1, 1);
     border-bottom-color: rgb(218, 1, 1);
 }
 
-.timeline .android td {
+.dev-timeline .android td {
     color: rgb(83, 173, 83);
     border-bottom-color: rgb(83, 173, 83);
 }
 
-.timeline .ios td {
+.dev-timeline .ios td {
     color: orange;
     border-bottom-color: orange;
 }
 
-.timeline .ruby td {
+.dev-timeline .ruby td {
     color: red;
     border-bottom-color: red;
 }
 
-.timeline .cpp td {
+.dev-timeline .cpp td {
     color: gray;
     border-bottom-color: gray;
 }
 
-.timeline .python td {
+.dev-timeline .python td {
     color: navy;
     border-bottom-color: navy;
 }
 
-.timeline .php td {
+.dev-timeline .php td {
     color: rgb(168, 81, 211);
     border-bottom-color: rgb(168, 81, 211);
 }
 
-.timeline .not {
+.dev-timeline .not {
     border-bottom: none;
 }
 
-.timeline th, .timeline td {
-    border-left: 1px dashed rgba(0,0,0,0.2);
-    border-right: 1px dashed rgba(0,0,0,0.2);
+.dev-timeline th, .dev-timeline td {
+    border-left: 1px dashed rgba(128,128,128,0.5);
+    border-right: 1px dashed rgba(128,128,128,0.5);
 }
 
-.timeline th:first-child, .timeline td:first-child {
+.dev-timeline th:first-child, .dev-timeline td:first-child {
     border-left: none;
 }
 
-.timeline th:last-child, .timeline td:last-child {
+.dev-timeline th:last-child, .dev-timeline td:last-child {
     border-right: none;
 }
 
-.timeline .timeline-table-container {
+.dev-timeline .timeline-table-container {
     width: 100%;
     overflow-x: scroll;
 }

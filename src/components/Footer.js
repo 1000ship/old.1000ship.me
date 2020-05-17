@@ -4,15 +4,16 @@ import Container from './Container'
 import { Row, Col, Link } from 'framework7-react'
 
 const FooterContainer = styled(Container)`
-    margin: 20px;
-    width: 100%;
-    display: block;
-    justify-items: center;
+    margin-bottom: 20px;
 `
 
 const FooterLink = styled(Link)`
     font-weight: bold;
-    color: #ABCDEF;
+    color: var(--primary-color-lighter);
+    transition: color 0.2s ease !important;
+    &:hover {
+        color: var(--primary-color-darker);
+    }
 `
 
 export default (props) => {

@@ -1,13 +1,17 @@
 import React from 'react'
 import Container from '../Container'
 import { Row, Col } from 'framework7-react'
+import styled from 'styled-components'
 
+const Title = styled.h3`
+    margin-left: 16px;
+`
 
 export default (props) => {
   return (
     <Container>
-      <Row className="timeline">
-        <Col width="100"><h3>🖥 What I used, using</h3></Col>
+      <Row className="dev-timeline">
+        <Col width="100"><Title className="partial-title">🖥 What I used, using</Title></Col>
         <Col className="timeline-table-container">
             <table>
                 <tr>

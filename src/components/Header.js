@@ -7,6 +7,9 @@ const HeaderContainer = styled.div`
     color: var(--navbar-text-color);
     padding: 13px;
     box-shadow: 0px 4px 4px var(--navbar-shadow-color);
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
 `
 const TitleText = styled.span`
     font-weight: 900;
