@@ -7,10 +7,8 @@ http://1000ship.me / My personal web-page
 
 ## What I used
 
-- Bootstrap
-- jQuery
-- Vanila script
-
+- Framework7
+- ReactJS
 
 
 ## I have plan to
