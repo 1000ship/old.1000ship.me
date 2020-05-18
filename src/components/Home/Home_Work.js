@@ -1,27 +1,36 @@
 import React from 'react'
 import { Link } from 'framework7-react'
+import styled from 'styled-components'
+import { rootApi } from '../api'
 
-const getRootPath = () => {
-    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-        return "/"
-    } else {
-        // return "https://1000ship.github.io/1000ship.me/"
-        return "http://1000sh.ipdisk.co.kr:8000/list/HDD1/1000sh-disk/_page/"
-    }
-}
-let RootDir = getRootPath()
+let RootDir = rootApi.getRootPath()
 const ThumbnailDir = `${RootDir}static/img/workspace/`
 const VideoDir = `${RootDir}static/video/`
+const TechIconDir = `${RootDir}static/tech-icons/`
+const TechIconList = ["air", "android", "flash", "framework7", "ios", "java", "javascript", "nodejs", "python", "rails", "react", "ruby", "swift"]
+
+const TechIconContainer = styled.div`
+    margin: 3px;
+`
+const TechIcon = styled.div`
+    width: 24px;
+    height: 24px;
+    background: url(${props => `${TechIconDir}${props.icon}.png`});
+    background-size: cover;
+    background-position: center center;
+    margin-right: 5px;
+    display: inline-block;
+`
 
 export default class extends React.Component {
     constructor(props) {
         super(props)
-        const {linkHref, imageName, supportVideo, videoName, title, description, createdYear, tags} = props
-        this.state = {linkHref, imageName, supportVideo, videoName, title, description, createdYear, tags}
+        const {linkHref, imageName, supportVideo, videoName, title, description, createdYear, tags, techIcons} = props
+        this.state = {linkHref, imageName, supportVideo, videoName, title, description, createdYear, tags, techIcons}
     }
 
     render() {
-        const {linkHref, imageName, supportVideo, videoName, title, description, createdYear, tags} = this.state
+        const {linkHref, imageName, supportVideo, videoName, title, description, createdYear, tags, techIcons} = this.state
         return (
         <div className="work">
             <Link href={`${linkHref}`} external target="_blank">  
@@ -43,6 +52,10 @@ export default class extends React.Component {
                 <div className="keyword">
                     {tags.map( tag => <div className="tag">{tag}</div> )}
                 </div>
+                <TechIconContainer>
+                    {techIcons && techIcons.filter( techIcon => TechIconList.includes(techIcon) )
+                        .map( (techIcon, i) => <TechIcon key={i} icon={techIcon}/> )}
+                </TechIconContainer>
             </div>
         </div>
         )   

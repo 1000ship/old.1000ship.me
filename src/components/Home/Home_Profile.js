@@ -17,10 +17,10 @@ export default (props) => {
           </div>
           <ul>
               <li>한국디지털미디어고등학교 웹프로그래밍 전공</li>
-              <li>홍익대학교 컴퓨터공학 전공 <span className="badge badge-info">진행중</span></li>
+              <li>홍익대학교 컴퓨터공학 전공 <span className="badge">진행중</span></li>
               <li>2016 멋쟁이사자처럼 4기</li>
               <li>2019 소프트웨어마에스트로 10기 연수</li>
-              <li>2020 홍익대 컴퓨터공학과 학생회 <span className="badge badge-info">진행중</span></li>
+              <li>2020 홍익대 컴퓨터공학과 학생회 <span className="badge">진행중</span></li>
           </ul>
         </Col>
       </Row>

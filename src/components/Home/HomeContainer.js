@@ -10,6 +10,10 @@ const HomeContainer = styled.div`
     margin-top: var(--margin-for-navbar);
 `
 
+const Spacer = styled.div`
+    height: 30px;
+`
+
 export default class extends React.Component {
     constructor(props){
         super(props)
@@ -19,7 +23,9 @@ export default class extends React.Component {
         return (
             <HomeContainer>
                 <Home_Profile/>
+                <Spacer/>
                 <Home_Timeline/>
+                <Spacer/>
                 <Home_Workspace>
                 {
                     workspaceApi.getWorks().map( (work, i) =>
@@ -33,6 +39,7 @@ export default class extends React.Component {
                         description = {work.description}
                         createdYear = {work.createdYear}
                         tags = {work.tags}
+                        techIcons = {work.techIcons}
                     />)
                 )}
                 </Home_Workspace>
