@@ -1,16 +1,19 @@
 {
   "name": "1000ship.me",
   "private": true,
-  "version": "1.0.0",
-  "description": "1000ship's homepage",
+  "version": "1.0.1",
+  "description": "1000ship's personal homepage",
   "repository": "",
   "license": "UNLICENSED",
   "scripts": {
     "start": "npm run dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.config.js",
     "build-dev": "cross-env NODE_ENV=development node ./build/build.js",
-    "build-prod": "cross-env NODE_ENV=production node ./build/build.js"
+    "build-prod": "cross-env NODE_ENV=production node ./build/build.js",
+    "deploy": "gh-pages -d www",
+    "predeploy": "yarn run build-prod"
   },
+  "homepage": "https://1000ship.gtihub.io/1000ship.me",
   "browserslist": [
     "Android >= 7",
     "IOS >= 11",
@@ -23,6 +26,7 @@
     "dom7": "^2.1.5",
     "framework7": "^5.7.5",
     "framework7-react": "^5.7.5",
+    "gh-pages": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

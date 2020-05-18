@@ -49,10 +49,15 @@
 
 .workspace .work .keyword .tag {
     border: 1px solid rgb(154, 154, 154);
-    color: rgb(97, 97, 97);
+    color: var(--text-color-2);
     font-size: 12px;
     font-weight: 100;
     display: inline-block;
     padding: 1px 3px;
     border-radius: 3px;
+    margin-right: 3px;
+}
+
+.theme-dark .workspace .work .keyword .tag {
+    font-weight: 300;
 }

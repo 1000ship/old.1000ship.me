@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 
-import Home from './Home'
-import Header from './Header'
-import Footer from './Footer'
+import Home from 'components/Home'
+import Header from 'components/Header'
+import Footer from 'components/Footer'
 
 export default () => (
   <Router>
     <Header/>
-    <Route path="/" component={Home}/>
+    <Route path="/" exact component={Home}/>
     <Footer/>
   </Router>
 )

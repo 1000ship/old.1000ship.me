@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Container from './Container'
+import { withRouter } from 'react-router-dom'
 
 const HeaderContainer = styled.div`
     background-color: var(--navbar-bg-color);
@@ -16,7 +17,7 @@ const TitleText = styled.span`
     font-size: 20px;
 `
 
-export default (props) => {
+const Header = (props) => {
     return (
         <HeaderContainer>
             <Container>
@@ -25,3 +26,5 @@ export default (props) => {
         </HeaderContainer>
     )
 }
+
+export default withRouter(Header)
