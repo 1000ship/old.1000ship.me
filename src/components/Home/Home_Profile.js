@@ -8,7 +8,7 @@ export default (props) => {
     <Container>
       <Row className="profile align-items-center">
         <Col width="100" medium="50" className="image">
-          <img src="static/img/profile.jpg"/>
+          <img src="static/img/profile.jpg" className="lazy lazy-fade-in"/>
         </Col>
         <Col width="100" medium="50">
           <div className="name">천성혁 <span>@1000ship</span></div>

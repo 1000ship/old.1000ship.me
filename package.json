@@ -1,6 +1,6 @@
 {
   "name": "1000ship.me",
-  "private": true,
+  "private": false,
   "version": "1.0.1",
   "description": "1000ship's personal homepage",
   "repository": "",

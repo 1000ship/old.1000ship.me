@@ -28,21 +28,17 @@ import routes from '../js/routes';
 export default class extends React.Component {
   constructor() {
     super();
-
     this.state = {
-      // Framework7 Parameters
       f7params: {
-        name: 'My App', // App name
-        theme: 'ios', // Automatic theme detection
-        
-        // App routes
+        name: '1000ship.me',
+        theme: 'ios',
         routes: routes,
         autoDarkTheme: true,
-        // Register service worker
         serviceWorker: {
           path: '/service-worker.js',
         },
       },
+
       // Login screen demo data
       username: '',
       password: '',

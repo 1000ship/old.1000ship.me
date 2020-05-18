@@ -1,8 +1,8 @@
 {
-  "name": "My App",
-  "short_name": "My App",
-  "description": "My App",
-  "lang": "en-US",
+  "name": "1000ship.me",
+  "short_name": "1000ship.me",
+  "description": "1000ship.me / Personal Homepage",
+  "lang": "ko-KR",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f4c81",

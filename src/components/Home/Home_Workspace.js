@@ -50,8 +50,7 @@ export default class extends React.Component {
                         {React.Children.map( this.props.children, (work, index) =>
                             ((index % columns == 2) ? <React.Fragment>{work}</React.Fragment> : <></>))}
                     </Col>
-                </Row>
-                            
+                </Row>     
             </Container>
     )}
 }
