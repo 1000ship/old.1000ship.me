@@ -8,7 +8,6 @@ export default class extends React.Component {
         this.state = {
             columns: 3,
         }
-        console.log( props )
     }
 
     componentDidMount() {
@@ -34,7 +33,6 @@ export default class extends React.Component {
 
     render () {
         const {columns} = this.state
-        console.log( "render", columns, this.props.children )
         return (
             <Container> 
                 <Row className="workspace">
