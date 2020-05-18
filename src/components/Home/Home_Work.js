@@ -3,6 +3,7 @@ import { Link } from 'framework7-react'
 
 const ThumbnailDir = "/static/img/workspace/"
 const VideoDir = "/static/video/"
+const images =  ((r) => r.keys().map(r))(require.context("../../static/img/workspace", false, /\.(png|jpe?g|svg)$/))
 
 export default ( {linkHref, imageName, supportVideo, videoName, title, description, createdYear, tags} ) => (
 <div className="work">

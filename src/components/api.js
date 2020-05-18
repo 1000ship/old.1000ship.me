@@ -12,8 +12,8 @@ const works = [
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/221833669565",
         imageName: "travelbadge.png",
-        supportVideo: true,
-        videoName: "travelbadge.mp4",
+        supportVideo: false,
+        videoName: null,
         title: "내 여행 발자취, TravelBadge",
         description: "단순히 내가 여행을 좋아해서 만들게되었다. 다녀온 나라를 iOS Today 위젯을 띄울 수 있다.",
         createdYear: "2020년",
