@@ -9,7 +9,7 @@ import "../css/workspace.css";
 export default createGlobalStyle`
     html {
         --margin-for-navbar: 56px;
-        --navbar-bg-color: rgb(250, 250, 250);
+        --navbar-bg-color: rgba(250, 250, 250, 0.8);
         --navbar-text-color: black;
         --navbar-shadow-color: rgba(0,0,0,0.05);
         --text-color-1: rgb(0,0,0);
@@ -25,7 +25,7 @@ export default createGlobalStyle`
         --secondary-color-lighter: #f8a8bb;
     } 
     .theme-dark {
-        --navbar-bg-color: rgb(20, 20, 20);
+        --navbar-bg-color: rgba(20, 20, 20, 0.8);
         --navbar-text-color: white;
         --navbar-shadow-color: rgba(0,0,0,0.05);
         --text-color-1: rgb(245,245,245);

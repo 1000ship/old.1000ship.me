@@ -9,6 +9,10 @@ const VideoDir = `${RootDir}static/video/`
 const TechIconDir = `${RootDir}static/tech-icons/`
 const TechIconList = ["air", "android", "flash", "framework7", "ios", "java", "javascript", "nodejs", "python", "rails", "react", "ruby", "swift"]
 
+const Video = styled.video`
+    object-fit: cover;
+`
+
 const TechIconContainer = styled.div`
     margin: 3px;
 `
@@ -37,10 +41,10 @@ export default class extends React.Component {
                 {(
                     supportVideo
                     ? (<>
-                        <video autoPlay loop muted poster={`${ThumbnailDir+imageName}`}
+                        <Video autoPlay loop muted poster={`${ThumbnailDir+imageName}`}
                             className="d-none d-md-block">
                             <source src={`${VideoDir+videoName}`} type="video/mp4"/>
-                        </video>
+                        </Video>
                         <img className="lazy lazy-fade-in d-block d-md-none" src={`${ThumbnailDir+imageName}`}/>
                     </>) : ( <img src={`${ThumbnailDir+imageName}`} className="lazy lazy-fade-in"/> )
                 )}
