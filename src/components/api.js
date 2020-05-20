@@ -30,7 +30,7 @@ const works = [
         description: "SW마에스트로 과정 중 진행한 팀프로젝트",
         createdYear: "2019년",
         tags: ["Web App","Ruby on rails","Android/iOS","소프트웨어마에스트로"],
-        techIcons: ['ruby', 'rails', 'framework7', 'android', 'ios'],
+        techIcons: ['ruby', 'rails', 'framework7', 'android', 'ios', 'aws'],
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/130179162297",
@@ -40,8 +40,8 @@ const works = [
         title: "요리 레시피 SNS, CookEat",
         description: "왜 요리 레시피는 전문적인 셰프들만 작성하는걸까? 생활 속 나만의 요리책도 공유할 수 있지 않을까?",
         createdYear: "2013년",
-        tags: ["SK 앱 개발 경진대회 최우수","Adobe AIR","ActionScript"],
-        techIcons: ['air'],
+        tags: ["2013 SK 스마틴앱챌린지 최우수","Adobe AIR","ActionScript"],
+        techIcons: ['air', 'php'],
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/130144509321",
@@ -64,6 +64,17 @@ const works = [
         createdYear: "2012년",
         tags: ["베지어 곡선","Adobe AIR","ActionScript","한국디지털미디어고등학교 IT경진대회 최우수"],
         techIcons: ['air'],
+    },
+    {
+        linkHref: "https://github.com/devxoul/Evermind",
+        imageName: "evermind.png",
+        supportVideo: false,
+        videoName: null,
+        title: "마인드맵 그리기, Evermind for Android",
+        description: "고등학교 입학 후 첫 공모전 입상 작품이자 첫 팀프로젝트 작품. GitHub, REST API 등 모르던 것들을 많이 배울 수 있었다.",
+        createdYear: "2012년",
+        tags: ["베지어 곡선","Adobe AIR","ActionScript","2013 SK 스마틴앱챌린지 우수"],
+        techIcons: ['air', 'android'],
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/130141493586",

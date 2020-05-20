@@ -7,7 +7,7 @@ let RootDir = rootApi.getRootPath()
 const ThumbnailDir = `${RootDir}static/img/workspace/`
 const VideoDir = `${RootDir}static/video/`
 const TechIconDir = `${RootDir}static/tech-icons/`
-const TechIconList = ["air", "android", "flash", "framework7", "ios", "java", "javascript", "nodejs", "python", "rails", "react", "ruby", "swift"]
+const TechIconList = ["air", "android", "flash", "framework7", "ios", "java", "javascript", "nodejs", "python", "rails", "react", "ruby", "swift", "php", "aws"]
 
 const Video = styled.video`
     object-fit: cover;
