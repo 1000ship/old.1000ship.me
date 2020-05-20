@@ -67,7 +67,7 @@ const works = [
     },
     {
         linkHref: "https://github.com/devxoul/Evermind",
-        imageName: "evermind.png",
+        imageName: "evermind.jpg",
         supportVideo: false,
         videoName: null,
         title: "마인드맵 그리기, Evermind for Android",
