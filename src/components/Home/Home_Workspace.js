@@ -20,11 +20,11 @@ export default class extends React.Component {
         const LG_SIZE = 992;
         let columns = 0;
         if ( window.innerWidth < MD_SIZE )
-            columns = 1
-        else if ( window.innerWidth < LG_SIZE )
             columns = 2
-        else
+        else if ( window.innerWidth < LG_SIZE )
             columns = 3
+        else
+            columns = 4
         if( this.state.columns != columns )
         {
             this.setState({columns});
@@ -38,17 +38,21 @@ export default class extends React.Component {
                 <Row className="workspace">
                     <Col width="50" className="work-sizer"></Col>
                     <Col width="100"><span className="partial-title">🎁 What I made</span></Col>
-                    <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : 33 }`}>
+                    <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : (columns==3) ? 33 : 25 }`}>
                         {React.Children.map( this.props.children, (work, index) =>
                             ((index % columns == 0) ? <React.Fragment>{work}</React.Fragment> : <></>))}
                     </Col>
-                    <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : 33 }`}>
+                    <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : (columns==3) ? 33 : 25 }`}>
                         {React.Children.map( this.props.children, (work, index) =>
                             ((index % columns == 1) ? <React.Fragment>{work}</React.Fragment> : <></>))}
                     </Col>
-                    <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : 33 }`}>
+                    <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : (columns==3) ? 33 : 25 }`}>
                         {React.Children.map( this.props.children, (work, index) =>
                             ((index % columns == 2) ? <React.Fragment>{work}</React.Fragment> : <></>))}
+                    </Col>
+                    <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : (columns==3) ? 33 : 25 }`}>
+                        {React.Children.map( this.props.children, (work, index) =>
+                            ((index % columns == 3) ? <React.Fragment>{work}</React.Fragment> : <></>))}
                     </Col>
                 </Row>     
             </Container>

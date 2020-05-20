@@ -25,6 +25,8 @@ export default createGlobalStyle`
         --secondary-color-lighter: #f8a8bb;
     } 
     .theme-dark {
+        --primary-color-darker: #1a8de9;
+        --primary-color-lighter: #041421;
         --navbar-bg-color: rgba(20, 20, 20, 0.8);
         --navbar-text-color: white;
         --navbar-shadow-color: rgba(0,0,0,0.05);

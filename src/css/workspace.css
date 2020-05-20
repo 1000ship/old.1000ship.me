@@ -7,7 +7,7 @@
 }
 
 .workspace .work {
-    margin: 15px 15px;
+    margin: 5px 5px;
     float: left;
 }
 
@@ -23,34 +23,34 @@
 }
 
 .workspace .work .contents {
-    padding: 5px;
+    padding: 0px;
 }
 
 .workspace .work .title {
-    margin-top: 5px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
 }
 
 .workspace .work .description {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
-    display: inline;
+    line-height: 15px;
+    display: inline-block;
 }
 
 .workspace .work .date {
-    color: #94b1ce;
+    color: var(--primary-color-darker);
     margin: 2px 5px;
     display: inline;
     word-break: keep-all;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .workspace .work .keyword .tag {
-    border: 1px solid rgb(154, 154, 154);
+    border: 0.5px solid rgb(154, 154, 154);
     color: var(--text-color-2);
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 100;
     display: inline-block;
     padding: 1px 3px;

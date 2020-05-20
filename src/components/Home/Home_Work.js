@@ -51,8 +51,7 @@ export default class extends React.Component {
             </Link>
             <div className="contents">
                 <div className="title">{title}</div>
-                <div className="description">{description}</div>
-                <div className="date">{createdYear}</div>
+                <div className="description">{description}<div className="date">{createdYear}</div></div>
                 <div className="keyword">
                     {tags.map( tag => <div className="tag">{tag}</div> )}
                 </div>
