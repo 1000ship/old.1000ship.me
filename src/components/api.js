@@ -1,7 +1,7 @@
 const works = [
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/221843365322",
-        imageName: "remocon.png",
+        imageName: "remocon.jpg",
         supportVideo: true,
         videoName: "remocon.mp4",
         title: "간단한 PC원격제어, Remocon",
@@ -12,7 +12,7 @@ const works = [
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/221833669565",
-        imageName: "travelbadge.png",
+        imageName: "travelbadge.jpg",
         supportVideo: false,
         videoName: null,
         title: "내 여행 발자취, TravelBadge",
@@ -23,7 +23,7 @@ const works = [
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/221833705335",
-        imageName: "foodiary.png",
+        imageName: "foodiary.jpg",
         supportVideo: true,
         videoName: "foodiary.mp4",
         title: "오늘의 음식 일기장, Foodiary",
@@ -45,7 +45,7 @@ const works = [
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/130144509321",
-        imageName: "android_game.png",
+        imageName: "android_game.jpg",
         supportVideo: false,
         videoName: null,
         title: "안드로이드 게임 개발용 개인 라이브러리",
@@ -56,7 +56,7 @@ const works = [
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/130171930719",
-        imageName: "evermind_pc.png",
+        imageName: "evermind_pc.jpg",
         supportVideo: false,
         videoName: null,
         title: "마인드맵 그리기, Evermind for PC",
@@ -78,7 +78,7 @@ const works = [
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/130130619961",
-        imageName: "kickball.png",
+        imageName: "kickball.jpg",
         supportVideo: true,
         videoName: "kickball.mp4",
         title: "볼 트래핑 게임, KickBall",
@@ -89,7 +89,7 @@ const works = [
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/130141988984",
-        imageName: "ship2d.png",
+        imageName: "ship2d.jpg",
         supportVideo: true,
         videoName: "ship2d.mp4",
         title: "2D 그래픽 하드웨어가속렌더링, Ship2D 개인 라이브러리 개발",
