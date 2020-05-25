@@ -22,6 +22,7 @@ export default class extends React.Component {
                 <Home_Profile/>
                 <Spacer/>
                 <Home_Timeline/>
+                <Spacer/>
                 <Footer/>
             </Page>
         )

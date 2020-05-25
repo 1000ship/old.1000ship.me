@@ -27,21 +27,35 @@ const MenuItem = styled(Link)`
     font-size: 18px;
     color: var(--text-color-2);
     margin-left: 15px;
-    
 `
 
-const Header = (props) => {
-    return (
-        <HeaderContainer>
-            <Container>
-                <TitleText href="/">
-                    1000ship
-                </TitleText>
-                <MenuItem href="/gallery">.gallery</MenuItem>
-                <MenuItem href="/me">.me</MenuItem>
-            </Container>
-        </HeaderContainer>
-    )
-}
+export default class extends React.Component {
+    constructor(props){
+        super(props)
+        console.log( props )
+        this.state = {
+            pageName: 'me',
+        }
+    }
 
-export default Header
+    setPageName( pageName ){
+        this.setState({
+            pageName
+        })
+    }
+
+    render() {
+        const {pageName} = this.state;
+        return (
+            <HeaderContainer>
+                <Container>
+                    <TitleText href="/">
+                        1000ship
+                    </TitleText>
+                    <MenuItem href="/gallery">.gallery</MenuItem>
+                    <MenuItem href="/me">.me</MenuItem>
+                </Container>
+            </HeaderContainer>
+        )
+    }
+}

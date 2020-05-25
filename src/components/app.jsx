@@ -24,8 +24,6 @@ import {
 } from 'framework7-react';
 
 import routes from '../js/routes';
-import Header from './Header';
-import Framework7 from 'framework7';
 
 export default class extends React.Component {
   constructor() {

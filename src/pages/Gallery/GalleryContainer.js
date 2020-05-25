@@ -10,6 +10,9 @@ import GalleryWorkspace from './GalleryWorkspace'
 export default class extends React.Component {
     constructor(props){
         super(props)
+        this.state = {
+            loading: true,
+        }
     }
 
     render () {
