@@ -8,7 +8,7 @@ const works = [
         description: "ReactJS를 익히기 위해 NomadCoder 강의를 보며 따라 만들어보았다.",
         createdYear: "2020년",
         tags: ["ReactJS", "NomadCoder", "Javascript"],
-        techIcons: ["react", 'javascript', 'nodejs'],
+        techIcons: ["react", 'javascript'],
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/221843365322",
@@ -86,6 +86,17 @@ const works = [
         createdYear: "2012년",
         tags: ["베지어 곡선","Adobe AIR","ActionScript","2013 SK 스마틴앱챌린지 우수"],
         techIcons: ['air', 'android'],
+    },
+    {
+        linkHref: "https://blog.naver.com/cjstjdgur123/130137426814",
+        imageName: "kinect.png",
+        supportVideo: true,
+        videoName: "kinect.mp4",
+        title: "MS Kinect, 적외선 신체움직임 탐지",
+        description: "마이크로소프트 키넥트를 활용하여 여러 프로그램을 만들어보았다. 기록이 많이 날아갔지만..",
+        createdYear: "2012년",
+        tags: ["Kinect","적외선 탐지","Microsoft","NativeExtension"],
+        techIcons: ['flash', 'java'],
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/130141493586",
