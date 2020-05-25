@@ -6,6 +6,7 @@ import { workspaceApi } from '../../api'
 import { Page, Navbar, Link } from 'framework7-react'
 import Footer from '../../components/Footer'
 import Container from '../../components/Container'
+import Home_Techtree from './Home_Techtree'
 
 const Spacer = styled.div`
     height: 30px;
@@ -20,6 +21,8 @@ export default class extends React.Component {
         return (
             <Page name="home">
                 <Home_Profile/>
+                <Spacer/>
+                <Home_Techtree/>
                 <Spacer/>
                 <Home_Timeline/>
                 <Spacer/>
