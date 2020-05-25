@@ -1,5 +1,16 @@
 const works = [
     {
+        linkHref: "https://1000ship.github.io/nomflix",
+        imageName: "nomflix.png",
+        supportVideo: false,
+        videoName: null,
+        title: "넷플릭스 따라만들기, Nomflix",
+        description: "ReactJS를 익히기 위해 NomadCoder 강의를 보며 따라 만들어보았다.",
+        createdYear: "2020년",
+        tags: ["ReactJS", "NomadCoder", "Javascript"],
+        techIcons: ["react", 'javascript', 'nodejs'],
+    },
+    {
         linkHref: "https://blog.naver.com/cjstjdgur123/221843365322",
         imageName: "remocon.jpg",
         supportVideo: true,
@@ -52,7 +63,7 @@ const works = [
         description: "플래시 IDE로 게임 개발하는게 너무 익숙해서 최대한 비슷하게 게임라이브러리를 만들어보고자했다. 완벽하지 않지만 화면 렌더링용으로 그냥 그럭저럭 쓸만했다.",
         createdYear: "2012년",
         tags: ["개인 라이브러리","Android"],
-        techIcons: ['android'],
+        techIcons: ['android', 'java'],
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/130171930719",
