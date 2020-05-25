@@ -39,7 +39,9 @@ export default class extends React.Component {
           path: '/service-worker.js',
         },
         view: {
-          pushState: true
+          pushState: true,
+          pushStateSeparator: "",
+          animate: false,
         },
       },
 
@@ -50,7 +52,7 @@ export default class extends React.Component {
   }
   render() {
     return (
-      <App params={ this.state.f7params } >
+      <App params={ this.state.f7params }>
         <GlobalStyles/>
         <View main className="safe-areas" url="/"/>
       </App>

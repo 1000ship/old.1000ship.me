@@ -41,7 +41,7 @@ export default class extends React.Component {
         const {linkHref, imageName, supportVideo, videoName, title, description, createdYear, tags, techIcons} = this.state
         return (
         <div className="work">
-            <Link href="/about/">  
+            <Link href={linkHref} external target="_blank"> 
                 {(
                     supportVideo
                     ? (<>

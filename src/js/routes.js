@@ -1,9 +1,9 @@
 
 import HomePage from '../pages/Home/index.js';
+import GalleryPage from '../pages/Gallery/index.js';
+
 import AboutPage from '../pages/about.jsx';
 import FormPage from '../pages/form.jsx';
-
-
 import DynamicRoutePage from '../pages/dynamic-route.jsx';
 import RequestAndLoad from '../pages/request-and-load.jsx';
 import NotFoundPage from '../pages/404.jsx';
@@ -12,9 +12,25 @@ var routes = [
   {
     path: '/',
     component: HomePage,
+    on: {
+      pageAfterIn(e, page) {
+        page.router.clearPreviousHistory();
+      },
+    },
   },
   {
-    path: '/about/',
+    path: '/gallery',
+    component: GalleryPage,
+    on: {
+      pageAfterIn(e, page) {
+        page.router.clearPreviousHistory();
+      },
+    },
+  },
+
+
+  {
+    path: '/about',
     component: AboutPage,
   },
   {

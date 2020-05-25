@@ -17,6 +17,7 @@ import '../css/app.less';
 
 // Import App Component
 import App from '../components/app.jsx';
+import Header from '../components/Header.js';
 
 // Init F7 React Plugin
 Framework7.use(Framework7React)
@@ -26,3 +27,9 @@ ReactDOM.render(
   React.createElement(App),
   document.getElementById('app'),
 );
+
+// For Header, custom made by 1000ship
+ReactDOM.render(
+  React.createElement(Header),
+  document.getElementById('header'),
+)
