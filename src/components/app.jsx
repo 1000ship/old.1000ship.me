@@ -24,6 +24,7 @@ import {
 } from 'framework7-react';
 
 import routes from '../js/routes';
+import Header from './Header';
 
 export default class extends React.Component {
   constructor() {
@@ -36,6 +37,9 @@ export default class extends React.Component {
         autoDarkTheme: true,
         serviceWorker: {
           path: '/service-worker.js',
+        },
+        view: {
+          pushState: true
         },
       },
 

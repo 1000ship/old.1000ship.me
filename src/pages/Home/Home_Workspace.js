@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from '../Container'
+import Container from '../../components/Container'
 import { Col, Row } from 'framework7-react'
 
 export default class extends React.Component {
@@ -40,19 +40,19 @@ export default class extends React.Component {
                     <Col width="100"><span className="partial-title">🎁 What I made</span></Col>
                     <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : (columns==3) ? 33 : 25 }`}>
                         {React.Children.map( this.props.children, (work, index) =>
-                            ((index % columns == 0) ? <React.Fragment>{work}</React.Fragment> : <></>))}
+                            ((index % columns == 0) ? <React.Fragment key={index}>{work}</React.Fragment> : <></>))}
                     </Col>
                     <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : (columns==3) ? 33 : 25 }`}>
                         {React.Children.map( this.props.children, (work, index) =>
-                            ((index % columns == 1) ? <React.Fragment>{work}</React.Fragment> : <></>))}
+                            ((index % columns == 1) ? <React.Fragment key={index}>{work}</React.Fragment> : <></>))}
                     </Col>
                     <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : (columns==3) ? 33 : 25 }`}>
                         {React.Children.map( this.props.children, (work, index) =>
-                            ((index % columns == 2) ? <React.Fragment>{work}</React.Fragment> : <></>))}
+                            ((index % columns == 2) ? <React.Fragment key={index}>{work}</React.Fragment> : <></>))}
                     </Col>
                     <Col width={`${ (columns==1) ? 100 : (columns==2) ? 50 : (columns==3) ? 33 : 25 }`}>
                         {React.Children.map( this.props.children, (work, index) =>
-                            ((index % columns == 3) ? <React.Fragment>{work}</React.Fragment> : <></>))}
+                            ((index % columns == 3) ? <React.Fragment key={index}>{work}</React.Fragment> : <></>))}
                     </Col>
                 </Row>     
             </Container>

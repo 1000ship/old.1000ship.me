@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Container from './Container'
-import { withRouter, Link } from 'react-router-dom'
+import { Link } from 'framework7-react'
 
 const HeaderContainer = styled.div`
     background-color: var(--navbar-bg-color);
@@ -23,7 +23,7 @@ const Header = (props) => {
     return (
         <HeaderContainer>
             <Container>
-                <TitleText href="/somewhere">
+                <TitleText href="/about">
                     1000ship
                 </TitleText>
             </Container>
@@ -31,4 +31,4 @@ const Header = (props) => {
     )
 }
 
-export default withRouter(Header)
+export default Header

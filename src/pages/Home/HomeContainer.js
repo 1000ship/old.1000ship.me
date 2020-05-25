@@ -4,10 +4,15 @@ import Home_Timeline from './Home_Timeline'
 import Home_Workspace from './Home_Workspace'
 import Home_Work from './Home_Work'
 import styled from 'styled-components'
-import { workspaceApi } from '../api'
+import { workspaceApi } from '../../api'
+import { Page, Navbar, Link } from 'framework7-react'
+import Footer from '../../components/Footer'
+import Container from '../../components/Container'
 
-const HomeContainer = styled.div`
-    margin-top: var(--margin-for-navbar);
+
+const NavTitleText = styled.div`
+    font-weight: 900;
+    font-size: 20px;
 `
 
 const Spacer = styled.div`
@@ -21,7 +26,7 @@ export default class extends React.Component {
 
     render () {
         return (
-            <HomeContainer>
+            <Page name="home">
                 <Home_Profile/>
                 <Spacer/>
                 <Home_Timeline/>
@@ -43,7 +48,8 @@ export default class extends React.Component {
                     />)
                 )}
                 </Home_Workspace>
-            </HomeContainer>
+                <Footer/>
+            </Page>
         )
     }
 }

@@ -1,13 +1,14 @@
 import React from 'react'
-import { Link } from 'framework7-react'
 import styled from 'styled-components'
-import { rootApi } from '../api'
+import { rootApi } from '../../api'
+import { Link } from 'framework7-react'
 
 let RootDir = rootApi.getRootPath()
 const ThumbnailDir = `${RootDir}static/img/workspace/`
 const VideoDir = `${RootDir}static/video/`
 const TechIconDir = `${RootDir}static/tech-icons/`
 const TechIconList = ["air", "android", "flash", "framework7", "ios", "java", "javascript", "nodejs", "python", "rails", "react", "ruby", "swift", "php", "aws"]
+const IconsSupportingDarkMode = ["ios", "aws"]
 
 const Video = styled.video`
     object-fit: cover;
@@ -24,6 +25,9 @@ const TechIcon = styled.div`
     background-position: center center;
     margin-right: 5px;
     display: inline-block;
+    .theme-dark & {
+        background-image: url(${props => `${TechIconDir}${props.iconDark}.png`});
+    }
 `
 
 export default class extends React.Component {
@@ -37,7 +41,7 @@ export default class extends React.Component {
         const {linkHref, imageName, supportVideo, videoName, title, description, createdYear, tags, techIcons} = this.state
         return (
         <div className="work">
-            <Link href={`${linkHref}`} external target="_blank">  
+            <Link href="/about/">  
                 {(
                     supportVideo
                     ? (<>
@@ -53,11 +57,21 @@ export default class extends React.Component {
                 <div className="title">{title}</div>
                 <div className="description">{description}<div className="date">{createdYear}</div></div>
                 <div className="keyword">
-                    {tags.map( tag => <div className="tag">{tag}</div> )}
+                    {tags.map( (tag, i) => <div key={i} className="tag">{tag}</div> )}
                 </div>
                 <TechIconContainer>
                     {techIcons && techIcons.filter( techIcon => TechIconList.includes(techIcon) )
-                        .map( (techIcon, i) => <TechIcon key={i} icon={techIcon}/> )}
+                        .map( (techIcon, i) => {
+                            let techIconDark = techIcon;
+                            if( IconsSupportingDarkMode.includes( techIcon ) )
+                                techIconDark += "-dark"
+                            return (<TechIcon
+                                key={i}
+                                icon={techIcon}
+                                iconDark={techIconDark}    
+                            /> )
+                        })
+                    }
                 </TechIconContainer>
             </div>
         </div>
