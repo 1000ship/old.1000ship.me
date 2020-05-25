@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { rootApi } from '../../api'
 import { Link } from 'framework7-react'
+import Framework7 from 'framework7'
 
 let RootDir = rootApi.getRootPath()
 const ThumbnailDir = `${RootDir}static/img/workspace/`
@@ -43,7 +44,7 @@ export default class extends React.Component {
         <div className="work">
             <Link href={linkHref} external target="_blank"> 
                 {(
-                    supportVideo
+                    Framework7.device.desktop && supportVideo
                     ? (<>
                         <Video autoPlay loop muted poster={`${ThumbnailDir+imageName}`}
                             className="d-none d-md-block">
