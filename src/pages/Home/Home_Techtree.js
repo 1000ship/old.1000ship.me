@@ -2,7 +2,10 @@ import React from 'react'
 import Container from '../../components/Container'
 import { Row, Col } from 'framework7-react'
 import styled from 'styled-components'
+import { rootApi } from '../../api'
 
+let RootDir = rootApi.getRootPath()
+const TechIconDir = `${RootDir}static/tech-icons/original/`
 const TechIconList = ["air", "flash", "android", "framework7", "ios", "java", "javascript", "nodejs", "python", "rails", "react", "ruby", "swift", "php", "aws"]
 const IconsSupportingDarkMode = ["ios", "aws"]
 
@@ -13,12 +16,12 @@ const Title = styled.h3`
 const TechIcon = styled(Col)`
   height: 100px;
   margin: 10px 0px;
-  background-image: url(${ props => `../../static/tech-icons/original/${props.icon}.png`});
+  background-image: url(${ props => `${TechIconDir}${props.icon}.png`});
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   transition: 0.5s !important;
-  .theme-dark & {
+  .theme-dark &{
     background-image: url(${ props => `../../static/tech-icons/original/${props.iconDark}.png`});
   }
   &:hover {
