@@ -84,6 +84,11 @@
     border-bottom-color: navy;
 }
 
+.theme-dark .dev-timeline .python td {
+    color: #4040ff;
+    border-bottom-color: #4040ff;
+}
+
 .dev-timeline .php td {
     color: rgb(168, 81, 211);
     border-bottom-color: rgb(168, 81, 211);
