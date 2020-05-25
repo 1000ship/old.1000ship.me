@@ -17,7 +17,7 @@ export default class extends React.Component {
 
     render () {
         return (
-            <Page name="gallery">
+            <Page name="me">
                 <Container>
                     <h1>Now developing this page... 😂</h1>
                     <h3>Link to</h3>

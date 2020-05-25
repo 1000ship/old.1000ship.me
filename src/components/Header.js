@@ -19,7 +19,7 @@ const TitleText = styled(Link)`
     font-weight: 900;
     font-size: 18px;
     color: var(--text-color-1);
-    margin-right: 10px;
+    margin-right: 5px;
 `
 
 const MenuItem = styled(Link)`
@@ -27,6 +27,11 @@ const MenuItem = styled(Link)`
     font-size: 18px;
     color: var(--text-color-2);
     margin-left: 15px;
+    transition: color 0.3s !important;
+    &:hover {
+        color: var(--primary-color-lighter);
+        font-weight: 900;
+    }
 `
 
 export default class extends React.Component {
