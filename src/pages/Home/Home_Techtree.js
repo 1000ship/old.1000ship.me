@@ -22,7 +22,7 @@ const TechIcon = styled(Col)`
   background-repeat: no-repeat;
   transition: 0.5s !important;
   .theme-dark &{
-    background-image: url(${ props => `../../static/tech-icons/original/${props.iconDark}.png`});
+    background-image: url(${ props => `${TechIconDir}${props.iconDark}.png`});
   }
   &:hover {
     transform: scale(1.2);
