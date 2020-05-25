@@ -85,7 +85,7 @@ export default (props) => {
                     <tr className="cpp">
                         <td>
                             <div className="language">C, C++</div>
-                            <span className="badge-text">KOI 전국 장려<br/>(경상남도 금상 대표)</span>
+                            <span className="badge-text">한국정보올림피아드<br/>전국 장려(경남 금상)</span>
                         </td>
                         <td></td>
                         <td className="not"></td>
