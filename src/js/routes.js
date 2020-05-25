@@ -1,12 +1,15 @@
 
 import HomePage from '../pages/Home/index.js';
 import GalleryPage from '../pages/Gallery/index.js';
+import MePage from '../pages/Me/index.js';
 
 import AboutPage from '../pages/about.jsx';
 import FormPage from '../pages/form.jsx';
 import DynamicRoutePage from '../pages/dynamic-route.jsx';
 import RequestAndLoad from '../pages/request-and-load.jsx';
 import NotFoundPage from '../pages/404.jsx';
+
+const TransitionType = "f7-fade"
 
 var routes = [
   {
@@ -17,6 +20,9 @@ var routes = [
         page.router.clearPreviousHistory();
       },
     },
+    options: {
+      transition: TransitionType
+    }
   },
   {
     path: '/gallery',
@@ -26,6 +32,21 @@ var routes = [
         page.router.clearPreviousHistory();
       },
     },
+    options: {
+      transition: TransitionType
+    }
+  },
+  {
+    path: '/me',
+    component: MePage,
+    on: {
+      pageAfterIn(e, page) {
+        page.router.clearPreviousHistory();
+      },
+    },
+    options: {
+      transition: TransitionType
+    }
   },
 
 

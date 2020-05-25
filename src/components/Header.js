@@ -38,7 +38,7 @@ const Header = (props) => {
                     1000ship
                 </TitleText>
                 <MenuItem href="/gallery">.gallery</MenuItem>
-                <MenuItem>.me</MenuItem>
+                <MenuItem href="/me">.me</MenuItem>
             </Container>
         </HeaderContainer>
     )

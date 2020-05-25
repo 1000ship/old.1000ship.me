@@ -25,6 +25,7 @@ import {
 
 import routes from '../js/routes';
 import Header from './Header';
+import Framework7 from 'framework7';
 
 export default class extends React.Component {
   constructor() {
@@ -39,9 +40,9 @@ export default class extends React.Component {
           path: '/service-worker.js',
         },
         view: {
-          pushState: true,
-          pushStateSeparator: "",
-          animate: false,
+          // pushState: true, // enabled when I get new dynamic server
+          // pushStateSeparator: "", // enabled when I get new dynamic server
+          animate: true, // !Framework7.device.desktop, // Mobile: true, Desktop: false
         },
       },
 
@@ -66,6 +67,13 @@ export default class extends React.Component {
   componentDidMount() {
     this.$f7ready((f7) => {
 
+      // for renewal message
+      this.$f7.toast.create({
+        text: "현재 개발 중 입니다. 버그가 있어도 봐주세요 ㅎㅎ..",
+        closeButton: true,
+        closeButtonText: '알겠습니당 ^^',
+        closeButtonColor: 'blue',
+      }).open();
       // Call F7 APIs here
     });
   }
