@@ -13,6 +13,11 @@ const IconsSupportingDarkMode = ["ios", "aws"]
 
 const Video = styled.video`
     object-fit: cover;
+    width: 100%;
+`
+
+const WorkLink = styled(Link)`
+    width: 100%;
 `
 
 const TechIconContainer = styled.div`
@@ -42,7 +47,7 @@ export default class extends React.Component {
         const {linkHref, imageName, supportVideo, videoName, title, description, createdYear, tags, techIcons} = this.state
         return (
         <div className="work">
-            <Link href={linkHref} external target="_blank"> 
+            <WorkLink href={linkHref} external target="_blank"> 
                 {(
                     Framework7.device.desktop && supportVideo
                     ? (<>
@@ -53,7 +58,7 @@ export default class extends React.Component {
                         <img className="lazy lazy-fade-in d-block d-md-none" src={`${ThumbnailDir+imageName}`}/>
                     </>) : ( <img src={`${ThumbnailDir+imageName}`} className="lazy lazy-fade-in"/> )
                 )}
-            </Link>
+            </WorkLink>
             <div className="contents">
                 <div className="title">{title}</div>
                 <div className="description">{description}<div className="date">{createdYear}</div></div>
