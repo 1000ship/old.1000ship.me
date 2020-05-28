@@ -140,7 +140,7 @@ const works = [
         description: "AS3.0 내 OpenGL처럼 GPU 가속 렌더링을 도와주는 Molehill API를 활용한 3D 두더지 잡기 게임",
         createdYear: "2011년",
         tags: ["비공식 팀프로젝트","ActionScript 3.0","하드웨어가속렌더링"],
-        techIcons: ['flash'],
+        techIcons: ['flash', 'alternativa3d'],
     },
 ]
 
