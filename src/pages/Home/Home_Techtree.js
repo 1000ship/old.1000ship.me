@@ -6,8 +6,8 @@ import { rootApi } from '../../api'
 
 let RootDir = rootApi.getRootPath()
 const TechIconDir = `${RootDir}static/tech-icons/original/`
-const TechIconList = ["air", "flash", "android", "framework7", "ios", "java", "javascript", "nodejs", "python", "rails", "react", "ruby", "swift", "php", "aws"]
-const IconsSupportingDarkMode = ["ios", "aws"]
+const TechIconList = ["air", "flash", "android", "framework7", "ios", "java", "javascript", "nodejs", "python", "rails", "react", "ruby", "swift", "php", "aws", "flask"]
+const IconsSupportingDarkMode = ["ios", "aws", "flask"]
 
 const Title = styled.h3`
     margin-left: 16px;
@@ -39,7 +39,8 @@ export default (props) => {
             return (<TechIcon
               key={i}
               width="33"
-              medium="20"
+              medium="25"
+              large="20"
               icon={iconName}
               iconDark={IconsSupportingDarkMode.includes(iconName)?`${iconName}-dark`:iconName}
             />)

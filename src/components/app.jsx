@@ -67,9 +67,9 @@ export default class extends React.Component {
 
       // for renewal message
       this.$f7.toast.create({
-        text: "현재 개발 중 입니다. 버그가 있어도 봐주세요 ㅎㅎ..",
+        text: "만드는 중입니다. 버그가 있어도 봐주세요 ㅎㅎ..",
         closeButton: true,
-        closeButtonText: '알겠습니당 ^^',
+        closeButtonText: '알겠습니당',
         closeButtonColor: 'blue',
       }).open();
       // Call F7 APIs here

@@ -1,5 +1,16 @@
 const works = [
     {
+        linkHref: "https://1000ship.github.io/poty-web",
+        imageName: "poty.png",
+        supportVideo: false,
+        videoName: null,
+        title: "유튜브 하이라이트 미리 보기, Play of the Youtube",
+        description: "학교 졸업프로젝트로 진행한 프로젝트. 재밌는 시점을 언급한 인기댓글을 모아 하이라이트를 만들어 보여준다.",
+        createdYear: "2020년",
+        tags: ["ReactJS", "졸업프로젝트", "유튜브 하이라이트"],
+        techIcons: ["react", 'javascript', 'nodejs', 'python', 'flask'],
+    },
+    {
         linkHref: "https://1000ship.github.io/nomflix",
         imageName: "nomflix.png",
         supportVideo: false,
@@ -55,17 +66,6 @@ const works = [
         techIcons: ['air', 'php'],
     },
     {
-        linkHref: "https://blog.naver.com/cjstjdgur123/130144509321",
-        imageName: "android_game.jpg",
-        supportVideo: false,
-        videoName: null,
-        title: "안드로이드 게임 개발용 개인 라이브러리",
-        description: "플래시 IDE로 게임 개발하는게 너무 익숙해서 최대한 비슷하게 게임라이브러리를 만들어보고자했다. 완벽하지 않지만 화면 렌더링용으로 그냥 그럭저럭 쓸만했다.",
-        createdYear: "2012년",
-        tags: ["개인 라이브러리","Android"],
-        techIcons: ['android', 'java'],
-    },
-    {
         linkHref: "https://blog.naver.com/cjstjdgur123/130171930719",
         imageName: "evermind_pc.jpg",
         supportVideo: false,
@@ -97,6 +97,17 @@ const works = [
         createdYear: "2012년",
         tags: ["Kinect","적외선 탐지","Microsoft","NativeExtension"],
         techIcons: ['flash', 'java'],
+    },
+    {
+        linkHref: "https://blog.naver.com/cjstjdgur123/130144509321",
+        imageName: "android_game.jpg",
+        supportVideo: false,
+        videoName: null,
+        title: "안드로이드 게임 개발용 개인 라이브러리",
+        description: "플래시 IDE로 게임 개발하는게 너무 익숙해서 최대한 비슷하게 게임라이브러리를 만들어보고자했다. 완벽하지 않지만 화면 렌더링용으로 그냥 그럭저럭 쓸만했다.",
+        createdYear: "2012년",
+        tags: ["개인 라이브러리","Android"],
+        techIcons: ['android', 'java'],
     },
     {
         linkHref: "https://blog.naver.com/cjstjdgur123/130141493586",

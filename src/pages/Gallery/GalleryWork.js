@@ -8,8 +8,8 @@ let RootDir = rootApi.getRootPath()
 const ThumbnailDir = `${RootDir}static/img/workspace/`
 const VideoDir = `${RootDir}static/video/`
 const TechIconDir = `${RootDir}static/tech-icons/`
-const TechIconList = ["air", "android", "flash", "framework7", "ios", "java", "javascript", "nodejs", "python", "rails", "react", "ruby", "swift", "php", "aws", "alternativa3d"]
-const IconsSupportingDarkMode = ["ios", "aws"]
+const TechIconList = ["air", "android", "flash", "framework7", "ios", "java", "javascript", "nodejs", "python", "rails", "react", "ruby", "swift", "php", "aws", "alternativa3d", "flask"]
+const IconsSupportingDarkMode = ["ios", "aws", "flask"]
 
 const Video = styled.video`
     object-fit: cover;
