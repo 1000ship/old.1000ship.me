@@ -38,8 +38,8 @@ export default class extends React.Component {
           path: '/service-worker.js',
         },
         view: {
-          // pushState: true, // enabled when I get new dynamic server
-          // pushStateSeparator: "", // enabled when I get new dynamic server
+          pushState: true, // enabled when I get new dynamic server
+          pushStateSeparator: "#", // enabled when I get new dynamic server
           animate: true, // !Framework7.device.desktop, // Mobile: true, Desktop: false
         },
       },

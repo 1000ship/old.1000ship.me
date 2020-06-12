@@ -11,9 +11,9 @@
     "build-dev": "cross-env NODE_ENV=development node ./build/build.js",
     "build-prod": "cross-env NODE_ENV=production node ./build/build.js",
     "deploy": "gh-pages -d www",
-    "predeploy": "yarn run build-prod"
+    "predeploy": "yarn run build-prod && cp CNAME www/CNAME"
   },
-  "homepage": "https://1000ship.gtihub.io/1000ship.me",
+  "homepage": "http://1000ship.me",
   "browserslist": [
     "Android >= 7",
     "IOS >= 11",
