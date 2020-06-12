@@ -1,6 +1,6 @@
 const works = [
     {
-        linkHref: "https://1000ship.github.io/poty-web",
+        linkHref: "http://poty.1000ship.me",
         imageName: "poty.png",
         supportVideo: false,
         videoName: null,
