@@ -123,6 +123,7 @@ const works = [
       "2013 SK 스마틴앱챌린지 우수",
     ],
     techIcons: ["air", "android"],
+    sizeContain: true
   },
   {
     linkHref: "https://blog.naver.com/cjstjdgur123/130137426814",
@@ -135,6 +136,7 @@ const works = [
     createdYear: "2012년",
     tags: ["Kinect", "적외선 탐지", "Microsoft", "NativeExtension"],
     techIcons: ["flash", "java"],
+    sizeContain: true
   },
   {
     linkHref: "https://blog.naver.com/cjstjdgur123/130141493586",
@@ -150,6 +152,7 @@ const works = [
       "행정안전부 SW인재발굴 앱개발경진대회 장려",
     ],
     techIcons: ["air", "android"],
+    sizeContain: true
   },
   {
     linkHref: "https://blog.naver.com/cjstjdgur123/130130619961",
@@ -162,6 +165,7 @@ const works = [
     createdYear: "2012년",
     tags: ["게임", "44.51K Downloads"],
     techIcons: ["air", "android"],
+    sizeContain: true
   },
   {
     linkHref: "https://blog.naver.com/cjstjdgur123/130141988984",

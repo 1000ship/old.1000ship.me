@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import styled from "styled-components";
 import { rootApi } from "../../api";
 import { Link } from "framework7-react";
@@ -29,60 +29,86 @@ const TechIconList = [
 ];
 const IconsSupportingDarkMode = ["ios", "aws", "flask"];
 
+const Work = styled.div`
+  cursor: pointer;
+  margin: 10px;
+  flex: 1 1 300px;
+  position: relative;
+`;
+
 const Video = styled.video`
   object-fit: cover;
   width: 100%;
 `;
-
-const WorkLink = styled(Link)`
+const ThumbnailFrame = styled.div`
   width: 100%;
+  height: 300px;
+  overflow: hidden;
+  ${({ src }) =>
+    src
+      ? `background-image: url(${src});
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;`
+      : null}
 `;
-
-const TechIconContainer = styled.div`
-  margin: 3px;
-`;
-const TechIcon = styled.div`
-  width: 24px;
-  height: 24px;
-  background: url(${(props) => `${TechIconDir}${props.icon}.png`});
-  background-size: cover;
-  background-position: center center;
-  margin-right: 5px;
-  display: inline-block;
-  .theme-dark & {
-    background-image: url(${(props) => `${TechIconDir}${props.iconDark}.png`});
+const Thumbnail = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: ${({ contain }) => (contain ? "contain" : "cover")};
+  object-position: center;
+  transition: transform 0.5s;
+  &:hover {
+    transform: scale(1.04);
   }
+  ${({ contain }) =>
+    contain &&
+    `
+  position: absolute;
+  left: 0;
+  top: 0;
+  `}
+`;
+const ThumbnailBackdrop = styled.div`
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+`;
+const Title = styled.div`
+  color: --1000ship-text-color-inverse;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+  font-size: 1.3em;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  padding: 0px 3px;
 `;
 
-export default class extends React.Component {
-  constructor(props) {
-    super(props);
-    const {
-      linkHref,
-      imageName,
-      supportVideo,
-      videoName,
-      title,
-      description,
-      createdYear,
-      tags,
-      techIcons,
-    } = props;
-    this.state = {
-      linkHref,
-      imageName,
-      supportVideo,
-      videoName,
-      title,
-      description,
-      createdYear,
-      tags,
-      techIcons,
-    };
-  }
 
-  render() {
-    const {
+const GalleryWork = (props) => {
+  const {
+    linkHref,
+    imageName,
+    supportVideo,
+    videoName,
+    title,
+    description,
+    createdYear,
+    tags,
+    techIcons,
+    sizeContain = false,
+    openPopup,
+  } = props;
+
+  const onWorkClick = (e) => {
+    openPopup({
       linkHref,
       imageName,
       supportVideo,
@@ -92,11 +118,13 @@ export default class extends React.Component {
       createdYear,
       tags,
       techIcons,
-    } = this.state;
-    return (
-      <div className="work">
-        <WorkLink href={linkHref} external target="_blank">
-          {Framework7.device.desktop && supportVideo ? (
+      sizeContain,
+    });
+  };
+
+  return (
+    <Work onClick={onWorkClick}>
+      {/* {Framework7.device.desktop && supportVideo ? (
             <>
               <Video
                 autoPlay
@@ -108,45 +136,33 @@ export default class extends React.Component {
                 <source src={`${VideoDir + videoName}`} type="video/mp4" />
               </Video>
               <img
-                className="lazy lazy-fade-in d-block d-md-none"
+                alt={title}
                 src={`${ThumbnailDir + imageName}`}
+                className="lazy lazy-fade-in d-block d-md-none"
               />
             </>
           ) : (
             <img
+              alt={title}
               src={`${ThumbnailDir + imageName}`}
               className="lazy lazy-fade-in"
             />
-          )}
-        </WorkLink>
-        <div className="contents">
-          <div className="title">{title}</div>
-          <div className="description">
-            {description}
-            <div className="date">{createdYear}</div>
-          </div>
-          <div className="keyword">
-            {tags.map((tag, i) => (
-              <div key={i} className="tag">
-                {tag}
-              </div>
-            ))}
-          </div>
-          <TechIconContainer>
-            {techIcons &&
-              techIcons
-                .filter((techIcon) => TechIconList.includes(techIcon))
-                .map((techIcon, i) => {
-                  let techIconDark = techIcon;
-                  if (IconsSupportingDarkMode.includes(techIcon))
-                    techIconDark += "-dark";
-                  return (
-                    <TechIcon key={i} icon={techIcon} iconDark={techIconDark} />
-                  );
-                })}
-          </TechIconContainer>
-        </div>
-      </div>
-    );
-  }
-}
+          )} */}
+      <ThumbnailFrame
+        src={sizeContain ? `${ThumbnailDir + imageName}` : null}
+        popupOpen=".work-popup"
+      >
+        {sizeContain && <ThumbnailBackdrop />}
+        <Thumbnail
+          contain={sizeContain}
+          alt={title}
+          src={`${ThumbnailDir + imageName}`}
+          className="lazy lazy-fade-in"
+        />
+      </ThumbnailFrame>
+      <Title>{title}</Title>
+    </Work>
+  );
+};
+
+export default GalleryWork;
