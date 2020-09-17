@@ -1,117 +1,123 @@
 .dev-timeline table {
-    margin: auto auto;
-    border-collapse: collapse;
-    padding: 0px;
+  margin: auto auto;
+  border-collapse: collapse;
+  padding: 0px;
 }
 
 .dev-timeline th {
-    font-size: 18px;
-    padding: 5px 33px;
+  font-size: 18px;
+  padding: 5px 33px;
 }
 
 .dev-timeline th .sub {
-    font-size: 12px;
-    color: gray;
-    text-align: center;
+  font-size: 12px;
+  color: gray;
+  text-align: center;
 }
 
 .dev-timeline td {
-    padding-top: 10px;
-    border-bottom: 3px solid var(--bg-color-inverse);
-    vertical-align: bottom;
+  padding-top: 10px;
+  border-bottom: 3px solid var(--bg-color-inverse);
+  vertical-align: bottom;
 }
 
 .dev-timeline td .language {
-    margin-left: 5px;
-    font-weight: 700;
-    font-style: italic;
-    background-color: var(--bg-color-1);
-    border-radius: 5px;
-    padding: 1px 5px;
-    display: inline-block;
+  margin-left: 5px;
+  font-weight: 700;
+  font-style: italic;
+  background-color: var(--bg-color-1);
+  border-radius: 5px;
+  padding: 1px 5px;
+  display: inline-block;
 }
 
 .dev-timeline td .badge-text {
-    font-size: 11px;
-    font-weight: 300;
-    text-align: left;
-    line-height: 1;
-    padding: .25em .4em;
-    display: inline-block;
+  font-size: 11px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1;
+  padding: .25em .4em;
+  display: inline-block;
 }
+
 .theme-dark .dev-timeline td .badge-text {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .dev-timeline tr td:nth-child(5) {
-    background: rgba(0,0,0,0.1);
-}
-.theme-dark .dev-timeline tr td:nth-child(5) {
-    background: rgba(255,255,255,0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
-.dev-timeline tr td:nth-child(7), .dev-timeline tr td:nth-child(8) {
-    background: rgba(0, 150, 0, 0.3);
+.theme-dark .dev-timeline tr td:nth-child(5) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dev-timeline tr td:nth-child(7),
+.dev-timeline tr td:nth-child(8) {
+  background: rgba(0, 150, 0, 0.3);
 }
 
 .dev-timeline .actionscript td {
-    color: rgb(218, 1, 1);
-    border-bottom-color: rgb(218, 1, 1);
+  color: rgb(218, 1, 1);
+  border-bottom-color: rgb(218, 1, 1);
 }
 
 .dev-timeline .android td {
-    color: rgb(83, 173, 83);
-    border-bottom-color: rgb(83, 173, 83);
+  color: rgb(83, 173, 83);
+  border-bottom-color: rgb(83, 173, 83);
 }
 
 .dev-timeline .ios td {
-    color: orange;
-    border-bottom-color: orange;
+  color: orange;
+  border-bottom-color: orange;
 }
 
 .dev-timeline .ruby td {
-    color: red;
-    border-bottom-color: red;
+  color: red;
+  border-bottom-color: red;
 }
 
 .dev-timeline .cpp td {
-    color: gray;
-    border-bottom-color: gray;
+  color: gray;
+  border-bottom-color: gray;
 }
 
 .dev-timeline .python td {
-    color: navy;
-    border-bottom-color: navy;
+  color: navy;
+  border-bottom-color: navy;
 }
 
 .theme-dark .dev-timeline .python td {
-    color: #4040ff;
-    border-bottom-color: #4040ff;
+  color: #4040ff;
+  border-bottom-color: #4040ff;
 }
 
 .dev-timeline .php td {
-    color: rgb(168, 81, 211);
-    border-bottom-color: rgb(168, 81, 211);
+  color: rgb(168, 81, 211);
+  border-bottom-color: rgb(168, 81, 211);
 }
 
 .dev-timeline .not {
-    border-bottom: none;
+  border-bottom: none;
 }
 
-.dev-timeline th, .dev-timeline td {
-    border-left: 1px dashed rgba(128,128,128,0.5);
-    border-right: 1px dashed rgba(128,128,128,0.5);
+.dev-timeline th,
+.dev-timeline td {
+  border-left: 1px dashed rgba(128, 128, 128, 0.5);
+  border-right: 1px dashed rgba(128, 128, 128, 0.5);
 }
 
-.dev-timeline th:first-child, .dev-timeline td:first-child {
-    border-left: none;
+.dev-timeline th:first-child,
+.dev-timeline td:first-child {
+  border-left: none;
 }
 
-.dev-timeline th:last-child, .dev-timeline td:last-child {
-    border-right: none;
+.dev-timeline th:last-child,
+.dev-timeline td:last-child {
+  border-right: none;
 }
 
 .dev-timeline .timeline-table-container {
-    width: 100%;
-    overflow-x: scroll;
+  width: 100%;
+  overflow-x: scroll;
 }

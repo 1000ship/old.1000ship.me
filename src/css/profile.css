@@ -1,36 +1,36 @@
 .profile .image {
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
 }
 
 .profile .name {
-    text-align: center;
-    font-size: xx-large;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .profile .name span {
-    font-size: medium;
-    font-weight: 500;
-    color: var(--text-color-3);
+  font-size: medium;
+  font-weight: 500;
+  color: var(--text-color-3);
 }
 
 .profile img {
-    width: 100%;
+  width: 100%;
 }
 
 .profile .describe {
-    color: var(--text-color-2);
-    background-color: var(--bg-color-1);
-    font-size: medium;
-    font-weight: 100;
-    text-align: center;
-    margin: 30px;
-    font-family: 'Noto Serif KR', serif;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    padding: 1rem;
-    border-radius: 5px;
+  color: var(--text-color-2);
+  background-color: var(--bg-color-1);
+  font-size: medium;
+  font-weight: 100;
+  text-align: center;
+  margin: 30px;
+  font-family: 'Noto Serif KR', serif;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+  padding: 1rem;
+  border-radius: 5px;
 }

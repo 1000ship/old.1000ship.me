@@ -1,4 +1,4 @@
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 import "../css/main.css";
 import "../css/profile.css";
@@ -117,4 +117,4 @@ export default createGlobalStyle`
         font-size: 26px;
         margin-bottom: 5px;
     }
-`
+`;
