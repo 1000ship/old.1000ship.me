@@ -79,7 +79,8 @@ const ThumbnailBackdrop = styled.div`
   top: 0;
 `;
 const Title = styled.div`
-  color: --1000ship-text-color-inverse;
+  color: white;
+  font-weight: 700;
   position: absolute;
   bottom: 10px;
   left: 10px;

@@ -30,11 +30,34 @@ const IconsSupportingDarkMode = ["ios", "aws", "flask"];
 
 const Container = styled.div`
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+const ImageFrame = styled.div`
+  width: 100%;
+  flex: 1;
+  position: relative;
+  background-image: url(${({src}) => src});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+`;
+const ImageBackdrop = styled.div`
+  backdrop-filter: blur(4px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top:0;
 `;
 const Image = styled.img`
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
 `;
 
 const TechIconContainer = styled.div`
@@ -110,15 +133,18 @@ const GalleryPopupPage = (props) => {
   return (
     <Page>
       <Container>
-        <Image alt={title} src={`${ThumbnailDir + imageName}`} />
+        <ImageFrame src={`${ThumbnailDir + imageName}`}>
+          <ImageBackdrop/>
+          <Image alt={title} src={`${ThumbnailDir + imageName}`} />
+        </ImageFrame>
         <Title>{title}</Title>
-        <Description>{description}</Description>
-        <Date>{createdYear}</Date>
+        <span>
+          <Description>{description}</Description>
+          <Date>{createdYear}</Date>
+        </span>
         <TagGroup>
           {tags?.map((tag, i) => (
-            <Tag key={i}>
-              {tag}
-            </Tag>
+            <Tag key={i}>{tag}</Tag>
           ))}
         </TagGroup>
         <TechIconContainer>

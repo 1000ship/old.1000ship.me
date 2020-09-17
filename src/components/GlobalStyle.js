@@ -15,6 +15,7 @@ export default createGlobalStyle`
         --text-color-1: rgb(0,0,0);
         --text-color-2: rgb(72,72,72);
         --text-color-3: rgb(108,108,108);
+        --text-color-inverse: rgb(255,255,255);
         --bg-color-inverse: rgb(0,0,0);
         --bg-color-1: rgb(255,255,255);
         --default-font-weight: 400;
@@ -31,6 +32,7 @@ export default createGlobalStyle`
         --text-color-1: rgb(245,245,245);
         --text-color-2: rgb(183,183,183);
         --text-color-3: rgb(160,160,160);
+        --text-color-inverse: rgb(0, 0, 0);
         --primary-color: #1a8de9;
         --primary-color-darker: #4fb1ff;
         --primary-color-lighter: #0f4c81;
