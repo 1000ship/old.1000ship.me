@@ -122,8 +122,8 @@ const MePresenter = (props) => {
         <hr></hr>
         <Section>
           <SectionTitle>Skill</SectionTitle>
-          {skillList.map((skill) => (
-            <MeSkill {...skill}></MeSkill>
+          {skillList.map((skill, i) => (
+            <MeSkill key={i} {...skill}></MeSkill>
           ))}
         </Section>
       </Container>
