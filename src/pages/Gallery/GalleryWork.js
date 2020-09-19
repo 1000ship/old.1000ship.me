@@ -46,7 +46,7 @@ const ThumbnailFrame = styled.div`
   overflow: hidden;
   ${({ src }) =>
     src
-      ? `background-image: url(${src});
+      ? `background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(${src});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

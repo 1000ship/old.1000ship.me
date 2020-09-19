@@ -38,7 +38,7 @@ const ImageFrame = styled.div`
   width: 100%;
   flex: 1;
   position: relative;
-  background-image: url(${({src}) => src});
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(${({src}) => src});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
