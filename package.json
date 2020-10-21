@@ -10,7 +10,7 @@
     "build-dev": "cross-env NODE_ENV=development node ./build/build.js",
     "build-prod": "cross-env NODE_ENV=production node ./build/build.js",
     "deploy": "gh-pages -d www",
-    "predeploy": "yarn run build-prod && cp CNAME www/CNAME"
+    "predeploy": "yarn run build-prod && cp CNAME www/CNAME && cp info.html www/info.html"
   },
   "homepage": "http://1000ship.me",
   "browserslist": [
