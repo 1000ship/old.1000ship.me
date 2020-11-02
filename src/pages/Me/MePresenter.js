@@ -10,6 +10,7 @@ const InstagramLink = "https://www.instagram.com/1000ship/";
 const FacebookLink = "https://www.facebook.com/1000ship";
 const YoutubeLink = "https://www.youtube.com/channel/UCABGTT1zjQgvkejvugkmdig";
 const BlogLink = "https://blog.naver.com/cjstjdgur123";
+const GithubLink = "https://github.com/1000ship"
 
 const NameText = styled.h1`
   font-size: 3em;
@@ -93,6 +94,12 @@ const MePresenter = (props) => {
         <Section>
           <SectionTitle>Social Network Activity</SectionTitle>
           <IconList>
+            <IconItem>
+              <IconButton href={GithubLink} target="_blank" external>
+                <ion-icon name="logo-github"></ion-icon>
+                <IconTitle>Github</IconTitle>
+              </IconButton>
+            </IconItem>
             <IconItem>
               <IconButton href={InstagramLink} target="_blank" external>
                 <ion-icon name="logo-instagram"></ion-icon>
